@@ -39,16 +39,7 @@ A modern, secure password strength checker and generator with a beautiful dark-t
 
 ## 🚀 Usage
 
-### Option 1: Standalone Desktop Application (Windows)
-
-1. Navigate to the `exe` folder
-2. Double-click `PasswordChecker.exe`
-3. The application will open in a fullscreen window
-4. Start checking or generating passwords immediately!
-
-**No installation required** - just run the executable!
-
-### Option 2: Web Browser
+### Web Browser
 
 1. Open `webpage/index.html` in any modern web browser
 2. The tool will work fully offline - no internet connection needed
@@ -101,23 +92,6 @@ python -m http.server 8000
 - **Vanilla JavaScript**: No dependencies, pure performance
 - **Font Awesome**: Beautiful icons
 
-### Desktop Application (Windows EXE)
-- **PyInstaller**: Packages the web app into a standalone executable
-- **PyQt5**: Provides native window functionality
-- **PyWebEngineView**: Embeds the web interface
-
-## 📁 Project Structure
-
-```
-password-checker/
-├── webpage/
-│   ├── index.html          # Main HTML structure
-│   ├── style.css           # Styling and animations
-│   └── script.js           # Password validation logic
-├── exe/
-    └── PasswordChecker.exe # Standalone Windows application
-```
-
 ## 🔒 Security & Privacy
 
 - **100% Client-Side**: All processing happens in your browser or desktop app
@@ -125,13 +99,6 @@ password-checker/
 - **No Data Storage**: Passwords are not saved, logged, or transmitted
 - **No Analytics**: We don't track your usage
 - **Open Source**: Full transparency - review the code yourself
-
-## 🎨 Screenshots
-
-### Main Interface
-- Modern dark purple theme with pink accents
-- Clean, intuitive layout
-- Real-time visual feedback
 
 ### Strength Indicators
 - 🔴 **Weak**: 0-2 criteria met (Red)
@@ -167,13 +134,6 @@ npx http-server
 # PHP
 php -S localhost:8000
 ```
-
-### Building Desktop Application
-If you want to rebuild the Windows executable:
-
-1. Install Python and required packages
-2. Run the build script (if available)
-3. PyInstaller will create the standalone .exe file
 
 ## 📝 License
 
