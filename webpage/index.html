@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker - PASS CHECKER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <div class="logo">
+                    <i class="fas fa-gem"></i>
+                    <h1>PASS CHECKER</h1>
+                </div>
+                <span class="collection-badge">SECURITY 2025</span>
+            </div>
+
+            <div class="content">
+                <h2 class="title">
+                    Secure Your
+                    <span class="highlight">Digital</span>
+                    Life
+                </h2>
+                <p class="description">
+                    Create a powerful password that protects your digital identity. 
+                    Each character strengthens your defense against unauthorized access.
+                </p>
+
+                <div class="password-input-wrapper">
+                    <input 
+                        type="password" 
+                        id="passwordInput" 
+                        placeholder="Enter your password"
+                        autocomplete="off"
+                    >
+                    <button type="button" id="togglePassword" class="toggle-btn">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <button type="button" id="copyPassword" class="copy-btn" title="Copy to clipboard">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+
+                <div class="strength-meter">
+                    <div class="strength-bar" id="strengthBar"></div>
+                </div>
+                <div class="strength-text" id="strengthText">Enter password to check strength</div>
+
+                <div class="requirements">
+                    <div class="requirement" id="req-length">
+                        <i class="fas fa-circle"></i>
+                        <span>Minimum 8 characters</span>
+                    </div>
+                    <div class="requirement" id="req-uppercase">
+                        <i class="fas fa-circle"></i>
+                        <span>Contains uppercase letters</span>
+                    </div>
+                    <div class="requirement" id="req-lowercase">
+                        <i class="fas fa-circle"></i>
+                        <span>Contains lowercase letters</span>
+                    </div>
+                    <div class="requirement" id="req-number">
+                        <i class="fas fa-circle"></i>
+                        <span>Contains numbers</span>
+                    </div>
+                    <div class="requirement" id="req-special">
+                        <i class="fas fa-circle"></i>
+                        <span>Contains special characters</span>
+                    </div>
+                    <div class="requirement" id="req-common">
+                        <i class="fas fa-circle"></i>
+                        <span>Not in common passwords list</span>
+                    </div>
+                </div>
+
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number" id="charCount">0</div>
+                        <div class="stat-label">CHARACTERS</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="criteriaCount">0/6</div>
+                        <div class="stat-label">CRITERIA MET</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="timeEstimate">< 1s</div>
+                        <div class="stat-label">CRACK TIME</div>
+                    </div>
+                </div>
+
+                <div class="results" id="results" style="display: none;">
+                    <h3>Security Analysis</h3>
+                    <p id="resultsText"></p>
+                </div>
+
+                <div class="actions">
+                    <button class="btn btn-primary" id="generateBtn">
+                        <i class="fas fa-random"></i>
+                        GENERATE STRONG PASSWORD
+                    </button>
+                    <button class="btn btn-secondary" id="checkBtn">
+                        <i class="fas fa-shield-alt"></i>
+                        ANALYZE SECURITY
+                    </button>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>Your password is never stored or transmitted</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
