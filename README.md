@@ -4,7 +4,6 @@ A modern, secure password strength checker and generator with a beautiful dark-t
 
 ![Security 2025](https://img.shields.io/badge/Security-2025-ff1493)
 ![License](https://img.shields.io/badge/license-MIT-blue)
-![Platform](https://img.shields.io/badge/platform-Windows-blue)
 
 ## ✨ Features
 
